@@ -1,0 +1,17 @@
+{
+  "name": "demo-web-shop-test-automation",
+  "version": "1.0.0",
+  "description": "Playwright end-to-end tests for the Demo Web Shop, using the Page Object Model.",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "Azmaeen Galib Hassan",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.4"
+  }
+}
