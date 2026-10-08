@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 import { RegisterPage} from "../pages/RegisterPage.js";
     
-test('Registration successful', async ({ page }) => {
+test('user can register a new account', async ({ page }) => {
     const pages = new RegisterPage(page);
 
     // Have a unique email on each execution

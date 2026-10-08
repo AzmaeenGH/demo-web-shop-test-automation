@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 import { InvalidLoginPage } from "../pages/InvalidLogin.js";
 
-test('Invalid login check Successful', async ({ page }) => {
+test('invalid credentials show a login error', async ({ page }) => {
     const pages = new InvalidLoginPage(page);
 
     await pages.page_Open();

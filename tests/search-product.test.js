@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { SearchProduct } from "../pages/SearchProductPage.js";
 
-test('[Search Product > Add to Cart] SUCCESSFUL', async ({ page }) => {
+test('user can search for a product and add it to the cart', async ({ page }) => {
     const pages = new SearchProduct(page);
 
     await pages.page_Open();

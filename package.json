@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Playwright end-to-end tests for the Demo Web Shop, using the Page Object Model.",
   "scripts": {
+    "pretest": "rm -rf allure-results",
     "test": "playwright test",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
   },
   "keywords": [],
   "author": "Azmaeen Galib Hassan",
@@ -12,6 +15,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.64.0",
-    "@types/node": "^26.6.4"
+    "@types/node": "^26.6.4",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.13.0"
   }
 }

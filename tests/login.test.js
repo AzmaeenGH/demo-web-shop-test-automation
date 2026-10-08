@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from "../pages/LoginPage.js";
     
-test('Login Successful', async ({ page }) => {
+test('registered user can log in', async ({ page }) => {
     const pages = new LoginPage(page);
 
     // LOGIN
